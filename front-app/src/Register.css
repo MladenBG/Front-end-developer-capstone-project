@@ -1,0 +1,46 @@
+.register-form {
+  max-width: 300px;   /* controls overall form size */
+  margin: auto;       /* centers the form */
+  padding: 2rem;
+  display: grid;
+  gap: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #3d27273a;
+  border-radius: 20px;
+  margin-top: 100px;
+}
+.register-form h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.register-form input {
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.register-form button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: rgb(247, 184, 11);
+  border-radius: 20px;
+}
+.form {
+  background-image: url("assets/images/Asset-7@4x.png");
+  background-size: contain;
+ background-repeat: no-repeat;
+ background-position: center;
+ min-height: 80vh;   /* full height of viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}

@@ -1,0 +1,20 @@
+h2 {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    line-height: 1.5;
+ font-family: "Leckerli One", cursive;
+  font-weight: 400;
+  font-style: normal;
+   background-image: linear-gradient(to bottom, #cfc09f, #ffecb3, #3a2c0f);
+     background-color: #FFD700; 
+     border-style: inset;
+     border-radius: 10px;
+     border-color: #ffd9006b;
+}
+.h11 {
+text-align: center;
+text-shadow: rgb(221, 64, 64);
+color: hsl(0, 78%, 2%);
+}

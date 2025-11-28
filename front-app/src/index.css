@@ -1,0 +1,137 @@
+
+/* Header layout */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #5a801e1c;
+  border-bottom: 1px solid #c5a8a8;
+  position: relative;
+  height: 50px;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+}
+
+/* Lines */
+.hamburger .line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #1d1a1a;
+  border-radius: 1px;
+  transition: transform 0.25s ease, opacity 0.2s ease, top 0.25s ease;
+  position: absolute;
+}
+
+.hamburger .line-1 { top: 15px; }
+.hamburger .line-2 { top: 23px; }
+.hamburger .line-3 { top: 31px; }
+
+/* When active -> cross */
+.hamburger.active .line-1 {
+  transform: translateY(8px) rotate(45deg);
+  top: 23px;
+}
+.hamburger.active .line-2 {
+  opacity: 0;
+}
+.hamburger.active .line-3 {
+  transform: translateY(-8px) rotate(-45deg);
+  top: 23px;
+}
+
+/* Nav links - hidden by default in mobile-ish style */
+.nav-links {
+  position: absolute;
+  right: 1rem;
+  top: 64px;
+  background: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(15,15,15,0.06);
+  width: 200px;
+  opacity: 0;
+  transform-origin: top right;
+  transform: scaleY(0.95);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  pointer-events: none;
+  z-index: 40;
+}
+
+/* Show menu */
+.nav-links.show {
+  opacity: 1;
+  transform: scaleY(1);
+  pointer-events: auto;
+}
+
+/* Nav list styles */
+.nav-links ul {
+  list-style: none;
+}
+.nav-links li a {
+  display: flex;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.12s ease;
+  text-align: center;
+}
+.nav-links li a:hover {
+  background: #fafafa;
+}
+.nav-links li:last-child a {
+  border-bottom: none;
+}
+
+/* Desktop: show inline nav and hide absolute menu */
+@media (min-width: 768px) {
+  .hamburger { display: none; }
+  .nav-links {
+    position: static;
+    opacity: 1;
+    transform: none;
+    width: auto;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    pointer-events: auto;
+  }
+  .nav-links ul { display: flex; gap: 1rem; }
+  .nav-links li a { padding: 0.5rem 0; border-bottom: none; color: #111; }
+}
+
+/* Content styling for demo */
+.content { padding: 2rem; }
+.content section { margin-bottom: 2rem; padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 6px 18px rgba(12,12,12,0.04); }
+
+.photo {
+  width: 50px;
+  height: 10px;
+}
+ul li {
+padding: 10px;
+align-content: center;
+font-size: x-large;
+display: block;
+ box-sizing: border-box;
+}
+a {
+  text-align: center;
+  justify-content: center;
+  display: grid;
+
+}

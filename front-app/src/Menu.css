@@ -1,0 +1,88 @@
+.menu-container {
+  padding: 20px;
+ width: 80vw;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+ margin: 0 auto;
+ max-width: 1200px;
+ background-color: rgba(0, 0, 0, 0.178);
+ margin-top: 30px;
+ border-radius: 10px;
+ background-image: url('/public/images/Asset 9@4x.png');
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: center;
+
+}
+
+.menu-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu-category {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.category-title {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.menu-list {
+
+  width: 60vw;          /* fill container */
+     /* cap on large screens */
+  margin: auto;
+  text-align: left;
+  box-sizing: border-box;
+}
+.menu-item {
+  border-bottom: 1px solid #eee;
+  padding: 16px 24px;   /* more padding */
+  font-size: 1.2rem;    /* bigger text */
+}
+.menu-name {
+  font-size: 1.3rem;    /* larger dish name */
+}
+.menu-price {
+  font-size: 1.2rem;
+  margin: right;
+  box-sizing: border-box; /* larger price */
+}
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-description {
+  font-size: 0.9rem;
+  color: #353434;
+  margin-top: 4px;
+}
+h1 {
+    text-align: center;
+}
+@media (max-width: 768px) {
+  .menu-list {
+    max-width: 100%;     /* allow full width on tablets/mobiles */
+    padding: 0 10px;     /* add breathing room */
+  }
+
+  .menu-item {
+    font-size: 1rem;     /* slightly smaller text */
+    padding: 12px 16px;
+  }
+ .menu-header {
+    flex-direction: column;   /* stack name + price vertically */
+    align-items: flex-start;
+  }
+}
