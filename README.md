@@ -7,4 +7,4 @@ Right click on src than click on open in integrated terminal.Write in terminal n
 For runing test on BookingForm.test.js you must install npm install --save-dev jest @testing-library/react @testing-library/jest-dom
 
 and run npm test
->>>>>>> 65997d9 (Meta Front End Capstone)
+ 65997d9 (Meta Front End Capstone)
