@@ -1,0 +1,13 @@
+.search-container {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.search-input {
+  width: 15%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: rgba(251, 255, 0, 0.973);
+  border-radius: 6px;
+  font-size: 1rem;
+}
